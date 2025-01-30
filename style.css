@@ -1,4 +1,33 @@
-h1 {
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-text-align: center;
+h1{
+justify-items: center;
+
+}
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+background-color: lightskyblue;
+}
+
+.gallery {
+display: flex;
+justify-content: space-between;
+gap: 100px;
+}
+
+.gallery-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3 ease;
+
+}
+
+.gallery-image:hover {
+    transform: scale(1.1);
 }

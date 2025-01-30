@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vårt Företag</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header med bakgrundsbild -->
+    <header>
+        <div class="overlay">
+            <img src="logga.jpg" alt="Företagets logga" class="logo">
+            <h1>Välkommen till Vårt Företag!</h1>
+        </div>
+    </header>
+
+    <!-- Om oss-sektion -->
+    <section class="about">
+        <h2>Om Oss</h2>
+        <p>Vi är ett företag som anordnar fantastiska event. Kom och upplev magiska stunder tillsammans med oss!</p>
+        <img src="eventbild1.jpg" alt="Eventbild" class="about-img">
+    </section>
+
+    <!-- Kommande event -->
+    <section class="events">
+        <h2>Kommande Event</h2>
+        <ul>
+            <li>
+                <p>Event 1 - Datum</p>
+                <button class="book-btn" onclick="showBooking()">Boka Biljett</button>
+            </li>
+            <li>
+                <p>Event 2 - Datum</p>
+                <button class="book-btn" onclick="showBooking()">Boka Biljett</button>
+            </li>
+            <li>
+                <p>Event 3 - Datum</p>
+                <button class="book-btn" onclick="showBooking()">Boka Biljett</button>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Bokningsinformation -->
+    <div id="booking-info" class="hidden">
+        <h2>Boka Biljett</h2>
+        <p>Swisha till: <strong>123 45 678</strong></p>
+        <p>Glöm inte att skriva ditt för- och efternamn när du swishar!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Vårt Företag - Alla rättigheter reserverade.</p>
+    </footer>
+
+    <script>
+        function showBooking() {
+            document.getElementById("booking-info").classList.toggle("hidden");
+        }
+    </script>
+
+</body>
+</html>
